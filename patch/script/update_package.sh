@@ -1,8 +1,8 @@
 #!/bin/bash
 #=================================================
 # Description: Build OpenWrt using GitHub Actions
-# Author: sirpdboy
-# https://github.com/sirpdboy/Openwrt
+# Author: tianzpxyz
+# https://github.com/tianzpxyz/Actions-openwrt-AUTO
 rm -rf ./package/new
 rm -rf ./package/lean/luci-theme-argon
 rm -rf ./package/lean/trojan
