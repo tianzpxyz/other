@@ -24,7 +24,7 @@ sed -i 's/家庭云/云盘/g' package/lean/luci-app-familycloud/luasrc/controlle
 sed -i '/filter_aaaa/d' package/network/services/dnsmasq/files/dhcp.conf
 sed -i 's/$(VERSION_DIST_SANITIZED)/$(shell date +%Y%m%d)-$(VERSION_DIST_SANITIZED)/g' include/image.mk
 curl -fsSL https://raw.githubusercontent.com/tianzpxyz/other/master/patch/autocore/files/index.htm > package/lean/autocore/files/index.htm
-echo "DISTRIB_REVISION='AUTO$(date +%Y.%m.%d) TIANZPXYZ'" > ./package/base-files/files/etc/openwrt_release1
+echo "DISTRIB_REVISION='Actions-$(date +%Y.%m.%d) TIANZPXYZ'" > ./package/base-files/files/etc/openwrt_release1
 svn co https://github.com/tianzpxyz/other/trunk/patch/netdata feeds/packages/admin/netdata
 svn co https://github.com/tianzpxyz/other/trunk/patch/luci-app-netdata ./package/lean/luci-app-netdata
 svn co https://github.com/tianzpxyz/mypackages/trunk/luci-theme-argon ./package/lean/luci-theme-argon
